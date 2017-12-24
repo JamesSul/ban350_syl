@@ -1,0 +1,15 @@
+Start,End,Unit,Topic,Due.Long,Due.Short,Due Date
+2018-09-04,2018-09-14,1,Regular Expressions,"DC 1 - String Manipulation in R: String basics, DC 2 - String Manipulation in R: Introduction to stringr, DC 3 - String Manipulation in R: Pattern Matching with regular expressions",DC 1-3,2018-09-14
+2018-09-15,2018-09-21,2,Advanced String Manipulation,"DC 4 - String Manipulation in R: More advanced matching and manipulation, DC 5 - String Manipulation in R: Case studies",DC 4-5,2018-09-21
+2018-09-22,2018-09-28,3,Introduction to Git,"DC 6 - Introduction to Git for Data Science: Basic workflow, DC 7 - Introduction to Git for Data Science: Repositories, DC 8 - Introduction to Git for Data Science: Undo",DC 6-9,2018-09-28
+2018-09-29,2018-10-05,4,Colaborating with Github,"DC 10 - Introduction to Git for Data Science: Working with branches, DC 11 - Introduction to Git for Data Science: Collaborating",DC 10-11,2018-10-05
+2018-10-06,2018-10-12,5,Project Overview,Assignment 1 - Creating your team repository and private slack channel,Assignment 1,2018-10-12
+2018-10-13,2018-10-19,6,Sentiment Basics,"DC 12 - Sentiment Analysis the Tidy Way: Tweets across the United States, DC 13 - Sentiment Analysis the Tidy Way: Shakespeare gets Sentimental, Assignment 2","DC 12-13, Assignment 2",2018-10-19
+2018-10-20,2018-10-26,7,n-grams,"DC 14 - Sentiment Analysis the Tidy Way: Analyzing TV News, DC 15 - Sentiment Analysis the Tidy Way: Singing a Happy Song (or Sad?!)",DC 14-15,2018-10-26
+2018-10-27,2018-11-02,8,Web APIs and Twitter Data,"DC 16 - Working with Web Data in R: Downloading Files and using API Clients, DC 17 - Working with Web Data in R: Using httr to interact with APIs directly, DC 18 - Working with Web Data in R: Handling [JSON and XML), Project Updates","DC 16-18, Project Updates",2018-11-02
+2018-11-03,2018-11-09,9,Web Scraping,"DC 19 - Working with Web Data in R: Web scraping with XPATHs, DC 20 - Working with Web Data in R: CSS Web Scraping and Final Case Study, Assignment 3","DC 19-20, Assignment 3",2018-11-09
+2018-11-10,2018-11-16,10,Topic Modeling,NA,NA,
+2018-11-17,2018-11-23,11,Social Networks Analysis (SNA),Assignment 4,Assignment 4,2018-11-23
+2018-11-24,2018-11-30,12,SNA with Facebook Data,Project Data Collection Report,Project Data Report,2018-11-30
+2018-12-01,2018-12-07,13,Project Work,NA,NA,
+2018-12-08,2018-12-14,14,Project Work,Project: All DataCamp reviews and certificates posted to #projects,Project,2018-12-14

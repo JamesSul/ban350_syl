@@ -1,0 +1,124 @@
+--- 
+title: "BAN 350: Text Analytics"
+author: "James Suleiman"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: JamesSul/ban300
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Introduction {-}
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+Welcome to the BAN 350: Text Analytics. Mining structured and unstructured data is critical for better decision making by deriving insights from a variety of data repositories. This course introduces how text analytics techniques can be used to improve decision making in different business applications. This course covers the fundamental principles and techniques of natural language processing and text mining, mostly from social media data. It uses real-world examples and cases to place text-mining techniques in context. Students will have hands-on experience with data/text mining software and implement a comprehensive group project.
+
+## Pre-class checklist {-}
+
+By the first day of class, you are expected to:
+
+1.  Review all the materials through unit 1 on this website.
+2.  Watch the welcome video.
+3.  Sign up for the [ban350 slack channel](https://join.slack.com/t/ban350/signup). You must use your maine.edu account to join the channel.
+4.  accept the invite to DataCamp I email you. I'll be sending them to your maine.edu accounts the week before classes start and again on the first day of classes. DataCamp is free for the entire semester. You shouldn't need to create a new account and can use the same one from BAN 300.
+5.  Install R and RStudio on your computer (you did this in [BAN 300](http://jamessuleiman.com/ban300/)), the prerequisite course.
+6.  Make sure you remember your userid and password for your free [RPubs](https://rpubs.com/) account.
+
+## Schedule {-}
+
+This is the only place you'll find due dates.
+
+_last updated: `r Sys.Date()`_
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(knitr)
+library(dplyr)
+schedule <- read.csv("./data/example_schedule.csv", stringsAsFactors = FALSE)
+output_schedule <- schedule %>%
+  mutate(Date = substr(Start,6,10), Due = substr(End, 6, 10)) %>%
+  select(Date, Unit, Topic, Items_due = Due.Short, Due)
+kable(output_schedule)
+```
+
+## Syllabus {-}
+
+### Prerequisites {-}
+
+BAN 300 (C- or higher grade).
+
+### Textbook (required and free) {-}
+
+`r include_graphics("./img/tidytext.png")`   
+
+[Text Mining with R](https://www.tidytextmining.com/), Julia Silge and David Robinson. If you would like a printed version, the text is only about $31 [on Amazon](https://www.amazon.com/_/dp/1491981652?tag=oreilly20-20)
+
+### Course Tools {-}
+
+**Blackboard** will only be used as a grade repository.  
+**[ban350.slack.com](https://ban350.slock.com)** will be used for announcements, teamwork, discussion, etc.  
+**[GitHub](https://github.com/)** will be the tool your team uses to code collaboratively.
+**[R](https://cran.r-project.org/)** is the analytics tool we will be using.  
+**[RStudio](https://www.rstudio.com/)** is the Integrated Development Environment (IDE) and the way you will be accessing R.  
+**[RPubs](https://rpubs.com/)** is where we will be publishing our assignments and project. 
+**[DataCamp]()** we'll be covering 30 chapters from their catalog.
+The class [RStudio Server]() is a backup that you should **only use in an emergency**. See #announcements in Slack for details.
+
+### Grading {-}
+
+DataCamp Exercises: 45%  (2 lowest grades dropped 20 - 2 = 18 @ 2.5% each)  
+Participation (in Slack): 15%  
+Assignments: 20%  (4 @ 5% each)
+Final Project: 20%  
+_Under no conditions will any items be accepted late in class_
+
+### Student Teams {-}
+
+You'll be working with one or two other students for all of your assignments and your project, but you'll be doing DataCamp exercises individually. There will be a peer evaluation tool implemented at the end of the semester to weight project work.
+
+### Learning Goals {-}
+
+Upon successful completion of this course, students will:
+
+* be able to extract data from social media
+* determine the sentiment and meaning from text data
+* obtain actionable insight from unstructured data
+
+
+### ADA {-}
+
+At any point in the semester, if you encounter difficulty with the course or feel you could be performing at a higher level, please consult with me. Students experience difficulty for a variety of reasons. Help is also available through the Counseling Center, 105 Payson Smith (780-4050), and the Office of Academic Support for Students with Disabilities, 237 Luther Bonney (780-4706; TTY 780-4395).
+
+Adaptations: The Americans with Disabilities Act of 1992 mandates the elimination of discrimination against persons with disabilities. If you need course adaptations or accommodations because of disability please contact the [Disability Services Center](https://usm.maine.edu/dsc), 2nd floor, 237 Luther Bonney Hall (780-4706; TTY 780-4395).
+
+### Conduct and Academic Integrity {-}
+
+The USM Student Academic Integrity Policy will be vigorously enforced in this class. Common sense should be your guide for how to behave online. For those that need a refresher, [here is a link to the USM Student Conduct Code](https://usm.maine.edu/sites/default/files/Office%20of%20the%20Provost/STUDENT%20CONDUCT.pdf). Because this is an online class, I’ll make a special mention of this. Do not flame people in the forums. Treat each other with civility and respect.
+
+### Repeating Courses {-}
+
+Any School of Business major or minor who has enrolled in an ABU, ACC, or BUS course more than twice must, before continuing in that course, complete and have approved by the Department Chair, a “ course condition form (available from the School of Business academic advisors). Failure to do so may result in course credit disqualification. Non-business students should consult specific policies that are applicable to their majors.
+
+### School Mission {-}
+
+We prepare and inspire current and future leaders, and stimulate economic growth by providing quality learning opportunities, valuable research and professional service, all in partnership with the business community.
+
+## Contact {-}
+
+There are a variety of ways to contact me. My office is in 322 Luther Bonney. I am good about responding to emails (suleiman@maine.edu) within 24 hours (48 on weekends). I typically check my emails twice per day (late morning and late afternoon). If you find this rigid email schedule somewhat odd, [this link pretty much describes the email system I have in place](http://www.asianefficiency.com/email-management/simple-guide-to-managing-your-email/). On the right hand side of this course site are my contact links.
+
+Even though email is the best way to contact me, feel free to skype me (you can just click on the skype button to complete the call provided you have skype installed). The first time you skype me, you will need to request that I add you as a contact. Make sure you use the skype button and don’t just search under my name otherwise you may end up connecting to the account my son uses on his xbox — which would be a bit creepy.
+
+If you are more comfortable with Google Hangouts, I have a few profiles on Google+…make sure you use the one linked in the sidebar. You may also contact me by phone (207.780.4410) but the response time will likely be slower than my email response time.
+
+## Project {-}
+
+We will be analyzing social media for a local business. I'll post more here after I have the project defined.
